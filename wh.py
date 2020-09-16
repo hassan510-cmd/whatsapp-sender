@@ -11,11 +11,11 @@ from pynput.keyboard import Key, Controller , Listener
 import win32gui
 import win32con
 
-The_program_to_hide = win32gui.GetForegroundWindow()
-win32gui.ShowWindow(The_program_to_hide, win32con.SW_HIDE)
+# The_program_to_hide = win32gui.GetForegroundWindow()
+# win32gui.ShowWindow(The_program_to_hide, win32con.SW_HIDE)
 keyboards=keyboard.Controller()
 
-ui, _ = loadUiType("D:/backup/Desktop/DeskFiles/python/main.ui")
+ui, _ = loadUiType("D:/backup/Desktop/DeskFiles/python/whatsapp-sender/main.ui")
 
 
 def testData(path):
@@ -44,6 +44,8 @@ class mainApp(QMainWindow, ui):
     def saveBrowes(self):
         saveLocation = QFileDialog.getOpenFileName(
             self, caption="save as", directory=".", filter="all files(*.*)")
+        if saveLocation[0] =="":
+            return
         self.saveLocation.setText(str(saveLocation[0]))
         self.phoneList.clear()
         list=testData(self.saveLocation.text())
@@ -56,6 +58,7 @@ class mainApp(QMainWindow, ui):
         self.browse.clicked.connect(self.saveBrowes)
 
     def sendMSG(self):
+        print("1")
         count=0
         x=''
         site='https://web.WhatsApp.com/send?phone=+20'
@@ -110,8 +113,8 @@ def main():
     window = mainApp()
     window.show()
     app.exec_()
-    The_program_to_hide = win32gui.GetForegroundWindow()
-    win32gui.ShowWindow(The_program_to_hide, win32con.SW_HIDE)
+    # The_program_to_hide = win32gui.GetForegroundWindow()
+    # win32gui.ShowWindow(The_program_to_hide, win32con.SW_HIDE)
 
 
 

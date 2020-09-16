@@ -6,24 +6,43 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>776</width>
-    <height>433</height>
+    <width>800</width>
+    <height>420</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>420</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>400</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Whatsapp-Sender</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons8_whatsapp_96px.png</normaloff>icons8_whatsapp_96px.png</iconset>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
   <property name="animated">
-   <bool>true</bool>
+   <bool>false</bool>
   </property>
   <property name="documentMode">
    <bool>false</bool>
   </property>
   <property name="dockNestingEnabled">
    <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks</set>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="autoFillBackground">
@@ -80,19 +99,6 @@
     </property>
     <property name="checked">
      <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="sendbutton">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>340</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>send</string>
     </property>
    </widget>
    <widget class="QPlainTextEdit" name="msgarea">
@@ -158,9 +164,9 @@
     <property name="geometry">
      <rect>
       <x>500</x>
-      <y>30</y>
+      <y>70</y>
       <width>256</width>
-      <height>341</height>
+      <height>301</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -218,39 +224,87 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>-20</y>
-      <width>921</width>
-      <height>421</height>
+      <x>-370</x>
+      <y>-30</y>
+      <width>1231</width>
+      <height>461</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>C:/Users/HassanMahmoud/Desktop/e8d94e1e8b6b530ad315e9385290141b.jpg</pixmap>
+     <pixmap>stars-pattern.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendbutton">
+    <property name="geometry">
+     <rect>
+      <x>423</x>
+      <y>331</y>
+      <width>60</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons8_letter_64px.png</normaloff>icons8_letter_64px.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>96</width>
+      <height>103</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>40</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gabriola</family>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white</string>
+    </property>
+    <property name="text">
+     <string>List of Numbers !</string>
     </property>
    </widget>
    <zorder>label_3</zorder>
    <zorder>radio2</zorder>
    <zorder>radio1</zorder>
-   <zorder>sendbutton</zorder>
    <zorder>msgarea</zorder>
    <zorder>browse</zorder>
    <zorder>saveLocation</zorder>
    <zorder>link</zorder>
    <zorder>openlink</zorder>
    <zorder>phoneList</zorder>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>776</width>
-     <height>26</height>
-    </rect>
-   </property>
+   <zorder>sendbutton</zorder>
+   <zorder>label</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
