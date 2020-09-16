@@ -81,6 +81,7 @@ class mainApp(QMainWindow, ui):
                     keyboards.press(Key.enter)
           # each number has it's owen message
         elif self.radio2.isChecked():
+            msg = self.msgarea.toPlainText()
             for i,j in zip(testData(self.saveLocation.text()),table(self.msgarea.toPlainText())) :
                 url2=site+str(i)
                 try :
