@@ -15,5 +15,8 @@ version form "chrome driver" compatible with your chrome version ... check from 
 https://mega.nz/file/JypFEThY#NJnAMqOUHDYexdQhFJ0WfBiCGjJtz116D-i5X0vlmkM
 note: exe file maybe not working cause of the version of "chrome driver " which included
 
-
 ![Image of 1](/1.png)
+
+* cvs file must be like this image
+![Image of 1](/2.png)
+
