@@ -16,4 +16,4 @@ https://mega.nz/file/JypFEThY#NJnAMqOUHDYexdQhFJ0WfBiCGjJtz116D-i5X0vlmkM
 note: exe file maybe not working cause of the version of "chrome driver " which included
 
 
-![Image of 1](https://octodex.github.com/whatsapp-sender/1.png)
+![Image of 1](/1.png)
